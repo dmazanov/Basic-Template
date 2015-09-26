@@ -1,0 +1,40 @@
+@charset "UTF-8";
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #fff; }
+
+/* Прибиваем футер к низу */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 970px;
+  /* мин ширину примерно на 10px шире контейнера*/
+  height: auto !important;
+  overflow: hidden; }
+
+.wrapper:after {
+  content: "";
+  height: 80px;
+  display: block; }
+
+.footer {
+  position: relative;
+  min-width: 970px;
+  height: 80px;
+  margin-top: -80px;
+  background-color: #eff3f7; }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+/* Header */
+/* Header end */
+/* Navigation */
+/* Navigation end */
+/* Footer */
+/* Footer end */
+/* --------- mixins --------- */
+/* --------- @ media screen --------- */

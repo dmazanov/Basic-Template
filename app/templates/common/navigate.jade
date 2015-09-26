@@ -1,0 +1,12 @@
+block link
+-var menu = { 'Home' : '/', 'Item2' : '/item2.html', 'Item3' : '#', 'Item4' : '#', 'Item5' : '#', 'Item6' : '#', 'Item7' : '#'};
+nav.nav.clearfix
+	.container
+		ul.nav__list
+			each val, key in menu
+				if selected === key
+					li.nav__item.active
+						.nav__link(href=val)= key
+				else
+					li.nav__item
+						a.nav__link(href=val)= key
