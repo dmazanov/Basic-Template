@@ -1,5 +1,11 @@
-@import '_mixins';
-@import '_style';
+
+// Modules
+@import 'modules/_variables';
+@import 'modules/_mixins';
+@import 'modules/_grid';
+
+//Components
+@import '_reset';
 @import '_header';
 @import '_navigate';
 @import '_footer';

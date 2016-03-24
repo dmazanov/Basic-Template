@@ -1,4 +1,19 @@
-$base-height: 100%;
+/**
+ * Reset file
+ */
+
+// Global box-sizing
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+html {
+  // `font-size` for REM use
+  font-size: 62.5%;
+  // Cancel hightlight color when tapping in iOS
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
 html, body {
 	padding: 0;
@@ -7,8 +22,11 @@ html, body {
 	height: $base-height;
 }
 body {
-	background-color: #fff; 
-	font-size: 100%;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $text-color;
+	background-color: $body-bg;
 }
 ol, ul{
 	list-style: none;
@@ -17,6 +35,13 @@ ol, ul{
 }
 a {
 	text-decoration: none;
+
+	&:focus,
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:active {}
 }
 h1, h2, h3, h4, h5, h6,p {
 	margin: 0;
@@ -29,7 +54,6 @@ img {
 .wrapper{
 	position: relative;
 	min-height: 100%;
-	min-width: 970px; /* мин ширину примерно на 10px шире контейнера*/
 	height: auto!important;
 	overflow: hidden;
 }
@@ -41,12 +65,7 @@ img {
 
 .footer {
 	position: relative;
-	min-width: 970px;
 	height: 80px;
 	margin-top: -80px;
 	background-color: #eff3f7;
-}
-.container {
-	width: 960px;
-	margin: 0 auto;
 }
