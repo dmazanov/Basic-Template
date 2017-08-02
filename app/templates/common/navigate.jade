@@ -6,7 +6,7 @@ nav.nav.clearfix
 			each val, key in menu
 				if selected === key
 					li.nav__item.active
-						.nav__link(href=val)= key
+						a.nav__link(href=val)= key
 				else
 					li.nav__item
 						a.nav__link(href=val)= key
