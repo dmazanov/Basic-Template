@@ -1,0 +1,12 @@
+{
+  "name": "basic-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dmazanov/Basic-Template.git",
+  "author": "Denis <dmazanov@mail.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^4.0.1"
+  }
+}
